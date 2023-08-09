@@ -1,0 +1,31 @@
+// This project attempts to use the basic animation skills we have learned to create a shooting star.
+
+var xPos = 0;
+var yPos = 400;
+
+var x = 20;
+var y = 0;
+
+draw = function() {
+    background(29, 40, 115);
+    
+    fill(69, 69, 69);
+    rect(20, 200, 40, 200);
+    rect(60, 100, 60, 300);
+    rect(120, 250, 95, 150);
+    rect(215, 175, 60, 225);
+    rect(275, 300, 40, 100);
+    rect(315, 75, 70, 325);
+    
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);
+    ellipse(x, y, 5, 5);
+    
+    xPos += 1;
+    yPos -=2;
+    
+    x += 1;
+    y += 2;
+};
+
+
