@@ -1,0 +1,33 @@
+// This project attempts to create an animal that is animated based on at least one variable.
+// The entire animal needs to move on the screen or get bigger or smaller.
+// I created a wolf that moves based on the X and Y values.
+noStroke();
+var bodyX = 200;
+var bodyY = 220;
+var bodyW = 110;
+var faceW = bodyW-(bodyW/4);
+
+draw = function() {
+    background(207, 254, 255);
+    // Tail
+    fill(102, 102, 102);
+    ellipse(bodyX+85, bodyY-50, bodyW, bodyW);
+    // Cover the remainder of the tail with a circle matching the background
+    fill(207, 254, 255);
+    ellipse(bodyX+70, bodyY-100, bodyW, bodyW*1.5);
+    // Body, face, snout, ears, and legs
+    fill(102, 102, 102);
+    ellipse(bodyX, bodyY, bodyW*2, bodyW); //body
+    ellipse(bodyX-100, bodyY-60, faceW, faceW); //face
+    rect(bodyX-170, bodyY-60, faceW/2, faceW/5); //snout
+    triangle(bodyX-85, bodyY-90, bodyX-105, bodyY-100, bodyX-95, bodyY-120); //ear
+    ellipse(bodyX-85, bodyY+60, bodyW/3, bodyW*5/6); //left leg
+    ellipse(bodyX+85, bodyY+60, bodyW/3, bodyW*5/6); //right leg
+    //white of the eye
+    fill(255, 255, 255);
+    ellipse(bodyX-125, bodyY-75, bodyW/10, bodyW/10);
+    // nose and pupil
+    fill(8, 8, 8);
+    ellipse(bodyX-168, bodyY-60, faceW/8, faceW/6);
+    ellipse(bodyX-125, bodyY-75, bodyW/30, bodyW/15);
+};
