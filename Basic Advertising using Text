@@ -1,0 +1,41 @@
+fill(255, 0, 0);
+textSize(80);
+text("PIZZA", 10, 80);
+
+fill(0, 0, 0);
+textSize(25);
+var price = "$13.99";
+text(price + "!!!", 10, 105);
+text(price + "!!!", 150, 200);
+text(price + "!!!", 250, 325);
+
+noStroke();
+fill(156, 102, 70);
+ellipse(100, 280, 150, 150);
+fill(250, 37, 37);
+ellipse(100, 280, 140, 140);
+fill(247, 230, 230);
+ellipse(100, 280, 135, 135);
+fill(150, 3, 0);
+ellipse(75, 230, 12, 12);
+ellipse(75, 260, 12, 12);
+ellipse(50, 270, 12, 12);
+ellipse(50, 310, 12, 12);
+ellipse(125, 230, 12, 12);
+ellipse(135, 275, 12, 12);
+ellipse(110, 335, 12, 12);
+ellipse(110, 310, 12, 12);
+ellipse(100, 280, 12, 12);
+ellipse(120, 260, 12, 12);
+ellipse(100, 250, 12, 12);
+ellipse(90, 320, 12, 12);
+ellipse(130, 315, 12, 12);
+ellipse(120, 290, 12, 12);
+ellipse(80, 290, 12, 12);
+ellipse(60, 290, 12, 12);
+ellipse(55, 250, 12, 12);
+ellipse(150, 250, 12, 12);
+ellipse(100, 220, 12, 12);
+ellipse(70, 330, 12, 12);
+ellipse(155, 290, 12, 12);
+
